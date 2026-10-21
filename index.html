@@ -9,14 +9,14 @@
     <!-- Open Graph -->
     <meta property="og:title" content="NotesBazaar — Study Notes for Students" />
     <meta property="og:description" content="Discover, explore, and share educational notes. Download the NotesBazaar app from Google Play." />
-    <meta property="og:image" content="logo.png" />
+    <meta property="og:image" content="assets/logo.png" />
     <meta property="og:url" content="#" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Back to top button -->
@@ -25,7 +25,7 @@
     <!-- Navigation Bar -->
     <nav class="navbar" id="navbar">
         <div class="nav-left">
-            <img src="logo.png" alt="NotesBazaar logo" class="logo">
+            <img src="assets/logo.png" alt="NotesBazaar logo" class="logo">
             <a href="#" class="brand">Notes<span class="highlight">Bazaar</span></a>
         </div>
         <div class="nav-right" id="navLinks">
@@ -33,12 +33,11 @@
             <a href="#about" class="nav-link">About App</a>
             <a href="#howto" class="nav-link">How to Use</a>
             <a href="#upload" class="nav-link">How to Upload</a>
-            <a href="#message" class="nav-link">Founder's Message</a>
             <a href="#creator" class="nav-link">About Founders</a>
             <a href="#contact" class="nav-link">Contact</a>
             <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
             <a href="terms-and-conditions.html" class="nav-link">Terms &amp; Conditions</a>
-            <a href="#download" class="btn-primary nav-button">Download App</a>
+            <a href="download.html" class="btn-primary nav-button">Download App</a>
         </div>
         <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">
             <span></span><span></span><span></span>
@@ -68,7 +67,7 @@
         <div class="container">
             <h2 class="section-title">About NotesBazaar</h2>
             <p class="section-subtitle">Making study resources easier to discover and share.</p>
-            <p class="about-text">NotesBazaar is a student‑focused educational platform designed to help learners discover, access, and share useful study materials. From handwritten notes to chapter summaries, students can find quality resources that support better preparation and smarter learning.</p>
+            <p class="about-text">NotesBazaar is a student‑focused educational platform designed to help learners discover, access, and share useful study materials. From handwritten notes to chapter‑wise revision resources, our goal is to make educational content easier to find and organize.</p>
             <div class="features-grid">
                 <div class="feature-card" data-reveal>
                     <div class="icon">📚</div>
@@ -134,63 +133,42 @@
                 <li>Enter the note title, subject, class, board, and optional chapter name.</li>
                 <li>Review your information and tap Upload Note.</li>
             </ol>
-        </div>
-    </section>
-
-    <!-- Message from Founder Section -->
-    <section class="founder-message" id="message">
-        <div class="container">
-            <div class="message-card" data-reveal>
-                <div class="quote-badge">
-                    <span class="quote-mark">“</span>
-                </div>
-                <h2 class="section-title">Message from our Founder</h2>
-                <blockquote class="message-quote">
-                    <p>“At NotesBazaar, we believe every student deserves a fair chance to achieve their dreams. NotesBazaar connects students through shared knowledge, making learning resources accessible, practical, and empowering.”</p>
-                </blockquote>
-                <div class="message-author">
-                    <div class="author-avatar">DK</div>
-                    <div class="author-meta">
-                        <strong class="author-name">Deva Kushwaha</strong>
-                        <span class="author-title">Founder, NotesBazaar</span>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 
     <!-- Founders Section -->
     <section class="creator" id="creator">
         <div class="container">
-            <h2 class="section-title">Meet the Founders</h2>
+            <h2 class="section-title">About the Founders</h2>
             <p class="section-subtitle">The minds behind NotesBazaar, built with a passion for education and learning.</p>
             <div class="founders-grid">
+                <!-- Founder: Deva Kushwaha -->
                 <div class="founder-card" data-reveal>
                     <div class="founder-avatar">
+                        <img src="assets/deva-kushwaha.jpg" alt="Deva Kushwaha" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                         <span class="avatar-fallback">DK</span>
                     </div>
                     <div class="founder-info">
                         <h3>Deva Kushwaha</h3>
                         <p class="role">Founder</p>
-                        <p class="bio">Passionate about educational empowerment and product strategy. Deva leads the vision of NotesBazaar to create an accessible, student-driven hub for sharing knowledge.</p>
+                        <p class="bio">Founder of NotesBazaar| Android Developer | Solving real-world problems through technology </p>
                         <div class="social-links">
-                            <a href="#" aria-label="LinkedIn" title="LinkedIn">in</a>
-                            <a href="#" aria-label="Instagram" title="Instagram">◎</a>
+                            <a href="#" aria-label="LinkedIn" title="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.6 1.6 0 0 0-1.6 1.6 1.6 1.6 0 0 0 1.6 1.6 1.6 1.6 0 0 0 1.6-1.6 1.6 1.6 0 0 0-1.6-1.6Z"/></svg></a>
                         </div>
                     </div>
                 </div>
 
+                <!-- Co-Founder: Prashant Pratap Singh -->
                 <div class="founder-card" data-reveal>
                     <div class="founder-avatar">
+                        <img src="assets/prashant-singh.jpg" alt="Prashant Pratap Singh" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                         <span class="avatar-fallback">PS</span>
                     </div>
                     <div class="founder-info">
                         <h3>Prashant Pratap Singh</h3>
                         <p class="role">Co-Founder</p>
-                        <p class="bio">BCA student and software developer interested in web development, UI/UX design, and building practical digital products. Prashant drives technical architecture and product development.</p>
+                        <p class="bio">Co-Founder of Notes Bazaar | MERN Stack Developer | Building impactful digital solutions through code and innovation.</p>
                         <div class="social-links">
-                            <a href="#" aria-label="LinkedIn" title="LinkedIn">in</a>
-                            <a href="#" aria-label="GitHub" title="GitHub">G</a>
+                            <a href="#" aria-label="LinkedIn" title="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.6 1.6 0 0 0-1.6 1.6 1.6 1.6 0 0 0 1.6-1.6 1.6 1.6 0 0 0-1.6-1.6Z"/></svg></a>
                         </div>
                     </div>
                 </div>
@@ -213,8 +191,8 @@
             <h2 class="section-title">Get in Touch</h2>
             <p class="section-subtitle">Have a question, suggestion, or feedback about NotesBazaar? We'd love to hear from you.</p>
             <div class="contact-card" data-reveal>
-                <p>Email: <a href="mailto:contact@notesbazaar.com">contact@notesbazaar.com</a></p>
-                <p>Follow us: <a href="#" aria-label="GitHub">GitHub</a> | <a href="#" aria-label="LinkedIn">LinkedIn</a> | <a href="#" aria-label="Instagram">Instagram</a></p>
+                <p>Email: <a href="mailto:contactnotesbazaar@gmail.com">contact@notesbazaar.com</a></p>
+                <p>Follow us:  <a href="#" aria-label="Youtube">YouTube</a> | <a href="#" aria-label="Instagram">Instagram</a></p>
             </div>
         </div>
     </section>
@@ -223,14 +201,13 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-brand">
-                <img src="logo.png" alt="NotesBazaar logo" class="logo">
+                <img src="assets/logo.png" alt="NotesBazaar logo" class="logo">
                 <p class="tagline">Your Notes. Your Knowledge. Your Success.</p>
             </div>
             <div class="footer-links">
                 <a href="#about">About NotesBazaar</a>
                 <a href="#howto">How to Use</a>
                 <a href="#upload">How to Upload</a>
-                <a href="#message">Founder's Message</a>
                 <a href="#creator">About Founders</a>
                 <a href="privacy-policy.html">Privacy Policy</a>
                 <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
@@ -242,6 +219,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
